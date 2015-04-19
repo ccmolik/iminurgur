@@ -25,6 +25,7 @@ Bring your redis server up, and run
 * Embed verification (hashing, signing, etc.)
 * Squash random exceptions it throws 
 * un-fuck code style
+
 # Credits
 * https://saxenarajat99.wordpress.com/2014/01/17/hiding-image-in-image-in-python-using-steganography/ for stepic shenanigans
 * [fitblip](https://github.com/fitblip) for the idea of using stegnography with imgur images
