@@ -1,6 +1,6 @@
 # What is this?
 
-Using stegnography, inject text into all imgur requests by proxying. It stores the contents in redis for performance (why bother re-stegging for a bunch of clients?)
+Using stegnography, inject text into all imgur image requests by proxying. It stores the contents in redis for performance (why bother re-stegging for a bunch of clients?)
 
 This is an inline script for mitmproxy. 
 # Requirements
