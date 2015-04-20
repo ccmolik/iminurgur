@@ -4,9 +4,23 @@ Using stegnography, inject text into all imgur image requests by proxying. It st
 
 This is an inline script for mitmproxy. 
 # Requirements
-Trying to get mitmproxy working in a virtualenv is annoying because lxml (among others) is goofy to compile. So yes, I'm a bad person.
+
+** This requires python 2.7 to my knowledge. `mitmproxy` seems to need python 2.7 to correctly `pip install`. **
+
+It's possible I'm wrong, but 1AM me couldn't get this working in CentOS 6 with py2.6
+
+Tested on Fedora 21. Should work in CentOS7, Ubuntu-recent, and anything with python2.7 or higher with relevant image-devel libraries installed.
+
+Doesn't seeem to work on CentOS 6.
+
 
 ## Python modules
+Note the `requirements.txt`:
+
+> pip install -r ./requirements.txt
+
+The list of modules:
+
 * mitmproxy
 * pillow
 * stepic
@@ -25,6 +39,7 @@ Bring your redis server up, and run
 * Embed verification (hashing, signing, etc.)
 * Squash random exceptions it throws 
 * un-fuck code style
+* Pick a solid state of module versions for requirements.txt (aka get this up in a venv)
 
 # Credits
 * https://saxenarajat99.wordpress.com/2014/01/17/hiding-image-in-image-in-python-using-steganography/ for stepic shenanigans
